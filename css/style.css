@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap'); */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +12,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #343045;
+    background-color: #181525;
     color: aliceblue;
 }
 
@@ -40,14 +39,6 @@ a {
     background-color: #000;
 }
 
-.navbar div {
-    /* flex: 1; */
-}
-
-.navbar div:first-child,
-.navbar div:last-child {
-    /* flex-grow: 1; */
-}
 
 .navbar {
     display: flex;
@@ -61,7 +52,6 @@ a {
 .nav-logo {
     display: flex;
     align-items: center;
-    /* background-color: rgb(4, 4, 91); */
     width: auto;
     margin-right: auto;
 }
@@ -89,7 +79,6 @@ a {
 
 /* NavBar - Sevond */
 .nav-list {
-    /* background-color: darkorange; */
     flex-grow: 0;
     margin-right: auto;
 
@@ -118,7 +107,6 @@ a {
 
 /* NavBar - Third */
 .nav-btns {
-    /* background-color: #ba1717; */
     display: flex;
     align-items: center;
     justify-content: end;
@@ -134,6 +122,7 @@ a {
 
 .contact-child {
     padding: 40px;
+    display: flex;
 }
 
 .contact-btn {
@@ -278,12 +267,14 @@ header span {
     padding: 50px;
     border-radius: 120px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
 .contact-child {
     display: flex;
+
 
 }
 
@@ -328,7 +319,6 @@ header span {
 }
 
 .introduction-child {
-    display: flex;
     width: 100%;
     align-items: center;
 }
@@ -402,6 +392,10 @@ header span {
     width: 100%;
 }
 
+.about-text p span {
+    display: none;
+}
+
 .about-text h2 {
     font-size: 40px;
 }
@@ -413,7 +407,6 @@ header span {
 }
 
 .about-text p {
-    /* margin: 40px auto; */
     font-size: 22px;
     line-height: 30px;
     font-weight: 200;
@@ -456,6 +449,7 @@ header span {
 }
 
 .card-btn {
+    color: #000;
     padding: 8px 40px;
     line-height: 30px;
     margin: 20px 0px 0px;
@@ -546,7 +540,6 @@ header span {
 /* Carrer */
 .career {
     display: flex;
-    /* align-items: center; */
     justify-content: space-evenly;
     background-image: url(../imgs/Vector\ 15\ \(1\).png);
     background-position-y: 20%;
@@ -558,7 +551,6 @@ header span {
     background: rgb(67, 61, 96);
     background: linear-gradient(121deg, rgba(67, 61, 96, 1) 0%, rgba(129, 118, 175, 1) 100%);
     border-radius: 50%;
-    /* padding: 50px; */
 }
 
 .career h2 {
@@ -581,7 +573,6 @@ header span {
 .career-text h3 {
     display: inline-block;
     font-size: 20px;
-    /* padding-right: 60px; */
 }
 
 .career-text-parent {
@@ -591,17 +582,11 @@ header span {
 
 .career-text {
     margin: 20px 0px;
-    /* padding: 15px; */
     display: flex;
     width: 200px;
 }
 
 /* 
-.test {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
 
 
 
@@ -620,7 +605,7 @@ header span {
     flex-direction: column;
     background: rgb(64, 58, 95);
     background: radial-gradient(circle, rgba(64, 58, 95, 1) 0%, rgba(33, 30, 46, 1) 100%);
-    border-radius: 30px;
+    border-radius: 40px;
     padding: 30px;
     margin: 30px auto;
     width: 80%;
@@ -859,10 +844,23 @@ footer .social i {
 
 
     .contact {
+        background: none;
         padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
     }
 
+    .contact-child {
+        display: flex;
+        width: 100%;
+        background: rgb(99, 89, 144);
+        background: radial-gradient(circle, rgba(99, 89, 144, 1) 0%, rgb(33, 29, 51) 100%);
+        border-radius: 30px;
+        margin: 10px 0px;
 
+    }
 
 
 
@@ -945,12 +943,6 @@ footer .social i {
 
 
 
-
-
-    .contact .child2,
-    .contact .child3 {
-        display: none;
-    }
 
     .contact-child {
         padding: 0px;
@@ -1058,7 +1050,7 @@ footer .social i {
 
 
     .technologies {
-        border-radius: 80px;
+        border-radius: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1113,13 +1105,10 @@ footer .social i {
 
     .career-text {
         margin: 50px 0px;
-        /* padding: 50px !important; */
         display: flex;
-        /* width: 120px; */
     }
 
     .career-3d-child {
-        /* width: 200px; */
         padding: 20px !important;
     }
 
@@ -1145,11 +1134,8 @@ footer .social i {
 
     .career {
         display: flex;
-        /* align-items: center; */
         justify-content: space-evenly;
         background-image: none;
-        /* background-position-y: 20%; */
-        /* background-size: 100% 40%; */
         background-repeat: no-repeat;
     }
 
@@ -1219,13 +1205,13 @@ footer .social i {
         margin: 20px 0px;
     }
 
-    footer .footer-btn {
+    footer .footer-btn button {
         margin: 20px auto;
-        padding: 5px 40px;
+        padding: 18px 40px;
         border-radius: 30px;
-        border: 0px;
-        background: linear-gradient(90deg, rgba(129, 118, 175, 1) 39%, rgba(192, 183, 232, 1) 100%);
         width: 80%;
+        background-color: linear-gradient(90deg, rgba(129, 118, 175, 1) 39%, rgba(192, 183, 232, 1) 100%);
+        color: #000;
     }
 
     footer .social {
@@ -1253,7 +1239,8 @@ footer .social i {
     .cards {
         width: 100%;
     }
-    .cards  button{
+
+    .cards button {
         width: 80%;
     }
 }
@@ -1322,16 +1309,24 @@ footer .social i {
 
 
     .contact {
-        padding: 0;
+        background: none;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: space-between;
+
     }
 
-    .contact-child div h2 {
-        font-size: 16px;
+    .contact-child {
+        display: flex;
+        width: 100%;
+        background: rgb(99, 89, 144);
+        background: radial-gradient(circle, rgba(99, 89, 144, 1) 0%, rgb(33, 29, 51) 100%);
+        border-radius: 30px;
+        margin: 10px 0px;
     }
 
-    .contact-child div p {
-        font-size: 14px;
-    }
 
 
 
@@ -1366,7 +1361,7 @@ footer .social i {
 
 
     .about {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         width: 100%;
         text-align: center;
@@ -1374,6 +1369,7 @@ footer .social i {
 
     .about-img img {
         margin: 0px auto;
+        width: 100%;
     }
 
     .large-about-img {
@@ -1383,12 +1379,15 @@ footer .social i {
     }
 
     .about-text h2 {
-        font-size: 4rem;
+        font-size: 40px;
     }
 
     .about-text h3 {
-        font-size: 3rem;
+        font-size: 40px;
+        font-weight: 200;
     }
+
+
 
     .about-text p {
         margin: 20px 0px;
@@ -1396,13 +1395,17 @@ footer .social i {
     }
 
     .about-text button {
-        width: 50%;
+        width: 80%;
+        padding: 15px 0px;
         font-size: 1.5rem;
         margin: 20px 0px;
     }
 
 
-
+    .card-btn {
+        width: 80%;
+        color: #000;
+    }
 
 
 
@@ -1419,15 +1422,11 @@ footer .social i {
 
         flex-wrap: nowrap;
         flex-direction: row !important;
-        /* width: 50%; */
         margin: 0px auto;
     }
 
     .cards div {
-        /* flex-wrap: wrap; */
-        /* flex-direction: row !important; */
         width: 70%;
-        /* margin: 0px auto; */
     }
 
     .cards p {
@@ -1474,7 +1473,11 @@ footer .social i {
 
 
 
-
+    .footer-btn button {
+        width: 100%;
+        border-radius: 20px;
+        color: #000;
+    }
 
 }
 
@@ -1486,6 +1489,13 @@ footer .social i {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+
+    .about {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
 
 
 
@@ -1535,12 +1545,8 @@ footer .social i {
 
     .introduction-arrow {
         display: block;
-        margin: 20px 0px;
         width: 100px !important;
         height: 1px;
-        border-top: 2px solid #C0B7E8;
-        position: relative;
-        margin-left: 20px;
     }
 
 
@@ -1590,6 +1596,10 @@ footer .social i {
     .nav-logo {
         justify-content: start;
 
+    }
+
+    .about-text p span {
+        display: block;
     }
 
     .contact-child {
